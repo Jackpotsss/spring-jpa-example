@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: jpa-example
+  datasource:
+    url: jdbc:mysql://localhost:3306/inz-empty?useSSL=false&characterEncoding=UTF-8
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+hibernate:
+  mappingLocations:
+    - classpath*:/config/*.hbm.xml
+    - classpath*:/config/hbm/*.xml
